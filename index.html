@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>World Heritage Conservator Club</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+	</head>
+	<body class="landing">
+	
+	<!-- Fade -->
+		<script>
+	jQuery('body').css('display','none');
+	jQuery(document).ready(function() {
+		jQuery('body').fadeIn();
+		jQuery('a').on('click',function(event){
+			var thetarget = this.getAttribute('target')
+			if (thetarget != "_blank"){
+				var thehref = this.getAttribute('href')
+				event.preventDefault();
+				jQuery('body').fadeOut(function(){
+					//alert(thehref)
+					window.location = thehref
+				});
+			}
+		});
+	});
+			setTimeout(function(){
+			jQuery('body').fadeIn();
+		},1000)
+	</script>
+	
+	
+	
+		<!-- Header -->
+			<header id="header" class="alt">
+				<h1><strong><a href="index.html">WHC</a></strong> Club</h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="activities.html">Activities</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="contact.html">Contact</a><li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<h2>World Heritage Conservators Club</h2>
+				<p>Preserving the Past</p>
+				<ul class="actions">
+					<li><a href="https://goo.gl/forms/adJ1ohKcdbiwNrAe2" class="button special big">Join Us</a></li> <!-- Have this link to Google Form for Signup -->
+					<li><a href="activities.html" class="button special big">Already a member?</a></li>
+				</ul>
+			</section>
+
+			<!-- Mission Statement -->
+				<section id="body" class="wrapper style1">
+					<div class="container 75%">
+						<div class="row 200%">
+							<div class="6u 12u$(medium)">
+								<header class="major">
+									<h2>Mission Statement</h2>
+								</header>
+							</div>
+							<div class="6u$ 12u$(medium)">
+								<p> I lost the mission statement :( </p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Resources -->
+				<section id="two" class="wrapper style2 special">
+					<div class="container">
+						<header class="major">
+							<h2>Images Here When We Do Something</h2>
+						</header>
+					</div>
+				</section>
+							
+						
+						
+
+			<!-- Contact Information -->
+				<section id="four" class="wrapper style3 special">
+					<div class="container">
+						<header class="major">
+							<h2>Interested in helping us?</h2>
+							<p>We can't do this alone</p>
+						</header>
+						<ul class="actions">
+							<li><a href="contact.html" class="button special big">Get in touch</a></li>
+						</ul>
+					</div>
+				</section>
+
+		</body>
+		
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="copyright">
+						<li>Contact: placeholder@stuy.edu</li>
+					</ul>
+				</div>
+			</footer>
+
+</html>
